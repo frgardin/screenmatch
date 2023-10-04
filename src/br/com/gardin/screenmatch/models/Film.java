@@ -1,6 +1,8 @@
 package br.com.gardin.screenmatch.models;
 
-public class Film extends Title {
+import br.com.gardin.screenmatch.timecalculus.Classifiable;
+
+public class Film extends Title implements Classifiable{
     private String director;
 
     public Film(String name, int launchYear) {
@@ -17,7 +19,14 @@ public class Film extends Title {
 
     @Override
     public String toString() {
-        return "Filme: " + super.getName();
+        return "Film: " + super.getName();
     }
 
+    @Override
+    public int getClassified() {
+        return 5;
+    }
+
+
+    
 }
