@@ -3,8 +3,8 @@ package br.com.gardin.screenmatch.models;
 public class Film extends Title {
     private String director;
 
-    public Film(String name) {
-        this.setName(name);
+    public Film(String name, int launchYear) {
+        super(name, launchYear);
     }
 
     public String getDiretor() {

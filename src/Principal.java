@@ -6,8 +6,8 @@ import br.com.gardin.screenmatch.timecalculus.TimeCalc;
 
 public class Principal {
     public static void main(String[] args) throws Exception {
-        Film fisrtFilm = new Film("name1");
-        Film secondFilm = new Film("name2");
+        Film fisrtFilm = new Film("name1", 1);
+        Film secondFilm = new Film("name2", 2);
 
 
 

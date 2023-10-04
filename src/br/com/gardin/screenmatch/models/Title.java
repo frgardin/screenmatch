@@ -6,6 +6,11 @@ public class Title {
     private boolean isIncluded;
     private int durationInMinutes;
 
+    public Title(String name, int launchYear) {
+        this.name = name;
+        this.launchYear = launchYear;
+    }
+
     public int getDurationInMinutes() {
         return durationInMinutes;
     }
