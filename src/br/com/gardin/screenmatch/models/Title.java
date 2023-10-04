@@ -5,7 +5,7 @@ public class Title {
     private int launchYear;
     private boolean isIncluded;
     private int durationInMinutes;
-    
+
     public int getDurationInMinutes() {
         return durationInMinutes;
     }
@@ -59,4 +59,5 @@ public class Title {
     double getAverage() {
         return gradesSum / gradesTotal;
     }
+
 }
