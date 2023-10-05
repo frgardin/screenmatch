@@ -1,6 +1,6 @@
 package br.com.gardin.screenmatch.models;
 
-public class Title {
+public class Title implements Comparable<Title>{
     private String name;
     private int launchYear;
     private boolean isIncluded;
@@ -63,6 +63,11 @@ public class Title {
 
     double getAverage() {
         return gradesSum / gradesTotal;
+    }
+
+    @Override
+    public int compareTo(Title title) {
+        return this.getName().compareTo(title.getName());
     }
 
 }

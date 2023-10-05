@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import br.com.gardin.screenmatch.models.Film;
 import br.com.gardin.screenmatch.models.Series;
@@ -13,12 +15,18 @@ public class Principal {
 
         ArrayList<Film> films = new ArrayList<>();
 
-        films.add(fisrtFilm);
         films.add(secondFilm);
+        films.add(fisrtFilm);
 
         System.out.println(films.size());
         System.out.println(films.get(0));
         System.out.println(films);
+        //old way to sort
+        // Collections.sort(films);
 
+        //new way
+
+        films.sort(Comparator.comparing(Film::getName));
+        System.out.println(films);
     }
 }

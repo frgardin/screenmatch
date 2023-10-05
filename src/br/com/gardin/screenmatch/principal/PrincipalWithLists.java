@@ -1,6 +1,7 @@
 package br.com.gardin.screenmatch.principal;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import br.com.gardin.screenmatch.models.Film;
 import br.com.gardin.screenmatch.models.Series;
@@ -23,5 +24,16 @@ public class PrincipalWithLists {
                 System.out.println("Classified" + film.getClassified());
             }
         }
+
+        //sort function
+
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Felipe");
+        names.add("André");
+
+        Collections.sort(names);
+
+        System.out.println(names);
     }
 }
